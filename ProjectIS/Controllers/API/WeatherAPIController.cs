@@ -25,7 +25,6 @@ namespace ProjectIS.Controllers.API
             Weather result;
             try
             {
-              //  WeatherService openWeather = new WeatherService(apiKey);
                 result = await _weatherService.GetCityByName(name);
             }
             catch (HttpRequestException httpRequestException)
